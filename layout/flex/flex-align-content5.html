@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 当子容器的高度不相同时，如果此时设置了align-content: stretch;
+        则会进行拉伸直到铺满父容器的高度，但此处的拉伸是先进行均匀拉伸，
+            然后在拉伸的基础上，再加上每行子容器中最大的高度值 */
+    .parent {
+      display: flex;
+      border: red solid 1px;
+      flex-wrap: wrap;
+      align-content: stretch;
+      height: 500px;
+    }
+    .item {
+      padding: 20px;
+      border: green solid 1px;
+    }
+    .item2 {
+      height: 50px;
+    }
+    .item9 {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+<div class="parent">
+  <div class="item">item1</div>
+  <div class="item item2">item2</div>
+  <div class="item item3">item3</div>
+  <div class="item">item4</div>
+  <div class="item">item5</div>
+  <div class="item">item6</div>
+  <div class="item">item7</div>
+  <div class="item">item8</div>
+  <div class="item item9">item9</div>
+</div>
+</body>
+</html>

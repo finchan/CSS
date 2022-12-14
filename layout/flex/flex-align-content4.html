@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      display: flex;
+      height: 500px;
+      border: red solid 1px;
+      flex-wrap: wrap;
+      align-content: stretch;/*当前子容器没有设置高度，所以两行子容器会均匀拉伸，直到铺满父容器的高度*/
+    }
+    .item {
+      padding: 20px;
+      border: green solid 1px;
+    }
+  </style>
+</head>
+<body>
+<div class="parent">
+  <div class="item">item1</div>
+  <div class="item">item2</div>
+  <div class="item">item3</div>
+  <div class="item">item4</div>
+  <div class="item">item5</div>
+  <div class="item">item6</div>
+  <div class="item">item7</div>
+  <div class="item">item8</div>
+  <div class="item">item9</div>
+</div>
+</body>
+</html>
